@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pluck"
+version = "0.1.0"
+description = "search YouTube Music, pick a track, save a tagged audio file"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "mutagen>=1.47",
+  "requests>=2.31",
+  "rich>=13.7",
+  "yt-dlp>=2024.12.13",
+  "yt-dlp-ejs",
+  "bgutil-ytdlp-pot-provider",
+  "ytmusicapi>=1.8",
+  "websocket-client>=1.8",
+]
+
+[project.scripts]
+pluck = "pluck.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pluck"]

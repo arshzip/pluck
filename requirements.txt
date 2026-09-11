@@ -1,8 +1,0 @@
-yt-dlp>=2024.12.13
-rich>=13.7
-mutagen>=1.47
-requests>=2.31
-ytmusicapi>=1.8
-yt-dlp-ejs
-bgutil-ytdlp-pot-provider
-websocket-client>=1.8

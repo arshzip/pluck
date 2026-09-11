@@ -10,10 +10,10 @@ streams.
 
 ## install
 
-    uv run pluck.py
+    uv tool install git+https://github.com/arshzip/pluck
 
-uv pulls the dependencies on first run. Needs ffmpeg. No uv? `pip install -r
-requirements.txt`.
+or from a clone: `uv tool install --editable .` — both put `pluck` on PATH.
+Needs ffmpeg.
 
 ## premium
 
