@@ -34,4 +34,4 @@ You can also refresh the cookie by running `pluck login`.
 - `~/.pluck/config.json` stores your auth cookie and download_dir (where downloads are saved).
 
 ## Notes
-depends on yt-dlp + ytmusicapi + ffmpeg + mutagen. Thanks to [bgutil-ytdlp-pot-provider](https://github.com/Brainicism/bgutil-ytdlp-pot-provider) for the sign in bypass. 
+depends on yt-dlp + ytmusicapi + ffmpeg + mutagen.

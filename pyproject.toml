@@ -14,7 +14,6 @@ dependencies = [
   "rich>=13.7",
   "yt-dlp>=2024.12.13",
   "yt-dlp-ejs",
-  "bgutil-ytdlp-pot-provider",
   "ytmusicapi>=1.8",
   "websocket-client>=1.8",
 ]
