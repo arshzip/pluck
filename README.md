@@ -1,12 +1,14 @@
 # pluck
 
-Download 256 kbps AAC files from YT Music streams without transcoding.
+### Download high quality music from YouTube Music.
 
 ![pluck](assets/preview.gif)
 
-Search or paste a link. Tracks, albums, videos (audio only). Get high quality audio files with album art + proper tagging.
+#### Search or paste a link. Tracks, albums, videos (audio only). Get 256 kbps AAC audio files with album art + proper tagging.
 
-While `pluck` works without YT Premium (or without a YT account), 256kbps AAC streams are only available to Premium subscribers. In case YT Premium isn't available, `pluck` will fall back to 160kbps Opus streams and transcode them.
+
+> [!NOTE]
+> While `pluck` works without YT Premium (or without a YT account), 256kbps AAC streams are only available to Premium subscribers. In case a YT Premium session cookie isn't supplied, `pluck` will fall back to 160kbps Opus streams and transcode them.
 
 ## Why not just use yt-dlp?
 YT Music's catalog splits into two halves: music videos on youtube.com (which yt-dlp), and dedicated streaming-only tracks reserved for Premium accounts. `pluck` exists to support and prioritize dedicated streaming-only tracks which are natively higher-quality AAC. This also avoids a lossy Opus→AAC/mp3 re-encode. Not to mention music videos often have intros/interludes which dedicated streaming tracks don't.
