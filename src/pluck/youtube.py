@@ -210,7 +210,10 @@ def download_audio(vid: str, tmp, progress_cb) -> tuple:
         if aac:
             pool = aac
     best = max(pool, key=quality)
-    with new_ydl({**base, "format": best["format_id"]}) as ydl:
+    # fall back to bestaudio/best if the specific format ID is temporarily unavailable
+    # across extractor client responses
+    format_selector = f"{best['format_id']}/bestaudio/best"
+    with new_ydl({**base, "format": format_selector}) as ydl:
         ydl.download([url])
 
     files = sorted(Path(tmp).glob("audio.*"))
